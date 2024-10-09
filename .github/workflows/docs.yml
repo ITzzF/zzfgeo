@@ -25,4 +25,5 @@ jobs:
             - name: PKG-TEST
               run: |
                   python -m unittest discover tests/
+            - run: pip install -r requirements_docs.txt
             - run: mkdocs gh-deploy --force
